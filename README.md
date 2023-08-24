@@ -1,5 +1,6 @@
 # norman-CNS-Lab-23
 Computer and Network Security Lab 2023
+
 Although the NUCs came with VS Code Studio pre-installed, I personally like Notepad++ a little better 
 so I decided to download and use that editor until such time as VS Code seems like a better option.
 
