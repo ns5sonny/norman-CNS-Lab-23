@@ -25,3 +25,8 @@ Pointing my browser to the appropriate path resulted in the webpage displaying o
 The Vagrant [Salt](https://developer.hashicorp.com/vagrant/docs/provisioning/salt) provisioner is a provisioner that uses [YAML](https://yaml.org/spec/1.2.2/) documents to describe the required state of the machine. This includes adjustments such as installing packages, running services, and contents of particular files. Salt uses profile files (ex. `/etc/salt/cloud.profiles.d`) for each machine that has Salt installed, which allows for multiple machines to be booted at once by a host, creating a "Salt-cloud". The booted machine is referred to as a "minion" in Salt terminology. 
 
 One bonus of using Salt is that it is already built in to Vagrant. A difference in using Salt as opposed to other provisioners is that it uses commands to install and provision a salt minion, so provisioning Salt through the Vagrantfile is **not** recommended. 
+
+## Copying files using File provisioner
+Adding the required line to the Vagrantfile was relatively straightforward, I had to use to absolute path for the Windows host machine but used a relative path for the vagrant guest. I also had to switch the backslashes to forward slashes for the source target to work properly. The part I struggled with was getting the file to actually copy correctly, until I found out I had to issue the command `vagrant provision` instead of just `vagrant reload` to get the Vagrantfile to execute the File provision. The final copy can be seen below:
+
+![proofofcopy.png](https://github.com/ns5sonny/norman-CNS-Lab-23/blob/main/Homework%201/ProofOfCopy.png)
