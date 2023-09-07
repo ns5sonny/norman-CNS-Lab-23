@@ -3,7 +3,7 @@
 
 Computer and Network Security
 
-30SEP23
+30AUG23
 
 ## Automated Webserver Creation
 I followed the tutorial on [Vagrant.com](https://developer.hashicorp.com/vagrant/tutorials/networking-provisioning-operations/getting-started-provisioning) to complete this section of the homework.
