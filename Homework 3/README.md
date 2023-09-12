@@ -1,6 +1,8 @@
-## Homework 2
+## Homework 3
 1/c Charles Norman
+
 Computer and Network Security
+
 14SEP23
 
 ## Installing New Linux Distribution
@@ -10,4 +12,6 @@ Installing a separate Linux distribution turned out to be the most difficut part
 Once I had the VM running properly, using SCC was fairly straightforward. I downloaded the .zip file from the Cyber Exchange site to my host machine, then used `vagrant upload C:\Users\normanc\hw3\scc-5.7.2_rhel8_x86_64\scc-5.7.2_rhel8_x86_64.tar.gz /home/vagrant/hw3/scc-5.7.2_rhel8_x86_64.tar.gz` to upload the tar.gz file to my VM. Once in the machine, I adjusted the benchmarks to only run those related to RHEL8. Once the tests finished running I extracted the resultant directory from my VM by using the command `vagrant scp :/home/vagrant/SCC C:\Users\normanc\hw3` (I had previously installed scp on my vagrant instance for this exact purpose)
 
 ## Outcomes
-The first thing I saw as SCC completed was the score it assigned my VM, which was not encouraging (seen in the screenshot of SCC running below). 
+The first thing I saw as SCC completed was the score it assigned my VM, which was not encouraging (seen in the screenshot of SCC running below). The overall score was 38.53% [RED], 89 passed controls, 142 failed, and 143 not checked with 6 failed CAT I's. A fair amount of work would need to be put into this VM to bring it up to standard. 
+
+![image.png](https://github.com/ns5sonny/norman-CNS-Lab-23/blob/main/Homework%203/image.png)
