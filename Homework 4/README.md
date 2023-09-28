@@ -33,3 +33,13 @@ For my unique script, I wrote a one-liner that creates a .txt file on the deskto
 Initially running the BadBlood script resulted in constant errors since the script was not allowed to create new users. However, the output was mildly entertaining:
 
 ![BadBlood muck](https://github.com/ns5sonny/norman-CNS-Lab-23/blob/main/Homework%204/badblood%20muck.png)
+
+I looked into the documentation for the BadBlood script and decided that 2500 users was too many, so I cut it down to 1500, with 500 groups and 100 computers. I did this by just editing the values in the script itself.
+
+After running the script in an Administrator PowerShell session, the script executed successfully as seen below (I took this screenshot because I liked the description in the blue bar at the top):
+
+![BadBlood Stuff and Things](https://github.com/ns5sonny/norman-CNS-Lab-23/blob/main/Homework%204/BadBlood%20stuff%20and%20things.png)
+
+Once the script finished running, the mess of users, groups, and computers were added to our domain:
+
+![Proof of BadBlood](https://github.com/ns5sonny/norman-CNS-Lab-23/blob/main/Homework%204/Proof%20of%20BadBlood.png)
